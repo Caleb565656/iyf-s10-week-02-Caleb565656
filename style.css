@@ -1,0 +1,205 @@
+/* ========================
+   GLOBAL STYLES
+======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+h1, h2, h3 {
+  margin-bottom: 15px;
+}
+
+p {
+  color: #bbbbbb;
+}
+
+/* ========================
+   NAVIGATION
+======================== */
+nav {
+  background: #111;
+  padding: 20px 10%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #222;
+}
+
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+  color: #00ffcc;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffcc;
+}
+
+/* ========================
+   ABOUT SECTION
+======================== */
+#about {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+#about img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00ffcc;
+  box-shadow: 0 0 30px #00ffcc33;
+}
+
+#about div {
+  flex: 1;
+}
+
+#about h2 {
+  font-size: 32px;
+  color: #00ffcc;
+}
+
+/* ========================
+   SKILLS SECTION
+======================== */
+#skills {
+  background: #141414;
+  text-align: center;
+}
+
+#skills h2 {
+  margin-bottom: 40px;
+  color: #00ffcc;
+}
+
+/* ONE COLUMN SKILLS */
+#skills > div {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 600px;
+  margin: auto;
+}
+
+#skills > div > div {
+  background: #1c1c1c;
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  border: 1px solid #222;
+}
+
+#skills > div > div:hover {
+  transform: translateY(-8px);
+  border: 1px solid #00ffcc;
+  box-shadow: 0 0 20px #00ffcc22;
+}
+
+/* ========================
+   CONTACT SECTION
+======================== */
+#contact {
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+form div {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: white;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 1px solid #00ffcc;
+}
+
+button {
+  padding: 12px 25px;
+  background: #00ffcc;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #00ccaa;
+  transform: scale(1.05);
+}
+
+/* ========================
+   FOOTER
+======================== */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #222;
+}
+
+footer p {
+  color: #888;
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav div {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
